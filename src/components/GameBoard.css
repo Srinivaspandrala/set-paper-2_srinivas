@@ -1,0 +1,39 @@
+.game-board-container {
+    text-align: center;
+  }
+  
+  .game-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 0 20px;
+  }
+  
+  .score, .time, .welcome {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(6, 100px); /* Adjusted for 6 columns */
+    grid-gap: 10px;
+    justify-content: center;
+  }
+  
+  .tile {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .tile img {
+    max-width: 80%;
+    max-height: 80%;
+  }
+  
